@@ -8,8 +8,52 @@
   </head>
   <body>
     <main>
+      <h1>Form</h1>
       <form action="">
-        <!-- Add your code here -->
+        <div>
+          <label for="username">Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Full Name"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@pdx.edu"
+          />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <input type="radio" name="character" id="spongebob" />
+          <label for="spongebob">Spongebob</label>
+          <br />
+          <input type="radio" name="character" id="sandy" />
+          <label for="sandy">Sandy</label>
+          <br />
+          <input type="radio" name="character" id="patrick" />
+          <label for="patrick">Patrick</label>
+          <br />
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+          <input type="checkbox" name="episodes" id="option1"></input>
+          <label for="option1">Yes, I have watched all the episodes</label>
+          <br>
+          <input type="checkbox" name="episodes" id="option2"></input>
+          <label for="option2">Yes, it's got the best memes</label>
+        </fieldset>
+        <br />
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
