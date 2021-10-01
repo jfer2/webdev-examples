@@ -2,3 +2,15 @@
   width: 600px;
   margin: 40px auto;
 }
+
+p::first-letter {
+  font-size: 3em;
+}
+
+p:hover {
+  background-color: lightskyblue;
+}
+
+p:hover::first-letter {
+  color: var(--white);
+}
