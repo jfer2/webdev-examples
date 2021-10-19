@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
 }
 
@@ -37,7 +37,7 @@ span {
 /* Display: none example  */
 /* Box-sizing: content-box vs border-box */
 .border-box {
-  display: none;
+  /* display: none; */
   box-sizing: border-box;
 }
 
