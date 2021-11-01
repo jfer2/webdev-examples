@@ -2,27 +2,35 @@ let result = {};
 
 const insertItem = (key, value) => {
   // insertItem the property with key and value into result
-  return key;
+  result[key] = value;
 };
 
 const deleteItem = (key) => {
   // remove the property with key from result
-  return key;
+  delete result[key];
 };
 
 const lookupItem = (key) => {
+  if (result.hasOwnProperty(key)) {
+    return result[key];
+  }
+
+  return 'Item does not exist';
   // return the value from result that is associated with key
-  return key;
 };
 
 const printItems = () => {
+    return (Object.keys(result).join(', '));
   // return a string of the concatenated key in result, separated by commas
 };
 
 insertItem('hello', 'world');
 insertItem('lorem', 'ipsum');
 insertItem('sit', 'amet');
+console.log(result);
+
 console.log(printItems());
+
 // expected: 'hello, lorem, sit' (order may be different)
 console.log(lookupItem('lorem'));
 // expected: 'ipsum'
